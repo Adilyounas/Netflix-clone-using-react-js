@@ -1,0 +1,158 @@
+.banner {
+    height: 380px;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        opacity: .2;
+    }
+
+   
+
+    >.heading {
+        width: 40%;
+        height: 100%;
+        z-index: 100;
+        padding-left:2rem ;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    
+        >h2{
+            font-size: 3.3rem;
+            font-weight: 400;
+            letter-spacing: 3px;
+        }
+        >h2,
+        p {
+            color: white;
+        }
+        
+        >p{
+            font-size: 1rem;
+            letter-spacing: 3px;
+            word-spacing: 1px;
+            font-weight: 100;
+        }
+
+
+
+        
+
+
+    }
+    
+    
+}
+
+.btn{
+    display: flex;
+    margin-top: 10px;
+    >button{
+        padding: .6rem 1.5rem;
+        font-size: 1rem;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        border-radius: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: none;
+        border: none;
+        z-index: 10;
+        text-align: center;
+        cursor: pointer;
+        transition: .5s;
+
+        &:hover{
+            background-color: rgba(0, 0, 0, 0.938);
+            color: white;
+
+        }
+
+        >svg{
+            font-size: 1.5rem;
+            margin-left: 5px;
+        }
+    }
+    
+    >.mylist{
+        
+        margin-left: 10px;
+        background-color: rgb(241, 241, 241);
+    }
+}
+
+
+.row {
+    overflow-x: auto;
+    background-color: black;
+    padding: .7rem;
+
+    >div {
+        display: flex;
+
+    }
+
+    >h2 {
+        color: white;
+        font-weight: 200;
+        margin: .3rem;
+
+    }
+}
+
+
+.card {
+    width: 160px;
+    cursor: pointer;
+    transition: .5s;
+    margin: .3rem;
+    border-radius: 2px;
+
+    &:hover {
+        transform: translateY(-10px) scale(1.05);
+    }
+}
+
+.gen {
+    display: flex;
+    background-color: black;
+    overflow-x: auto;
+    height: 100px;
+    justify-content: flex-start;
+    align-items: center;
+
+    >h3 {
+        color: rgb(0, 0, 0);
+        margin: 1rem;
+        font-weight: 100;
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 130px;
+
+        &:hover {
+            background-color: rgb(238, 237, 237);
+            font-weight: 200;
+
+        }
+    }
+
+
+}
+
